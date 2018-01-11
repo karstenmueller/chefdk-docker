@@ -11,7 +11,7 @@ RUN wget --quiet "http://packages.chef.io/files/${CHANNEL}/chefdk/${VERSION}/ubu
     dpkg -i /tmp/chefdk.deb
 RUN echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ wheezy main" \
     | tee /etc/apt/sources.list.d/azure-cli.list
-RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 52E16F86FEE04B979B07E28DB02C46DF417A0893 || true
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 417A0893
 RUN apt-get --quiet install apt-transport-https && \
     apt-get --quiet update && apt-get install azure-cli
 RUN apt-get --quiet clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
