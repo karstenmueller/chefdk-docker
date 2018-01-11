@@ -12,4 +12,4 @@ This is simply the standard [chefdk](https://github.com/chef/chef-dk) Dockerfile
 - Azure CLI 2.0
 
 ## Ruby gems
-inspec rake kitchen-azurerm chef-provisioning-azurerm
+inspec rake kitchen-azurerm chef-provisioning-azurerm bundler

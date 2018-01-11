@@ -13,7 +13,7 @@ RUN echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ wheez
     | tee /etc/apt/sources.list.d/azure-cli.list && \
     apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 417A0893 && \
     apt-get update -qq && apt-get install -qq -y azure-cli
-RUN chef gem install --no-user-install inspec rake chef-provisioning-azurerm kitchen-azurerm rubocop bundler
+RUN chef gem install --no-user-install inspec rake chef-provisioning-azurerm kitchen-azurerm bundler
 RUN apt-get --quiet clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 CMD ["/bin/bash"]
