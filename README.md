@@ -11,3 +11,6 @@ This is simply the standard [chefdk](https://github.com/chef/chef-dk) Dockerfile
 
 ## Other packages
 - Azure CLI 2.0
+
+## Ruby gems
+inspec rake kitchen-azurerm chef-provisioning-azurerm

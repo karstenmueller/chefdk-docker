@@ -14,6 +14,7 @@ RUN echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ wheez
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 417A0893
 RUN apt-get --quiet install apt-transport-https && \
     apt-get --quiet update && apt-get install azure-cli
+RUN gem install --no-user-install inspec rake kitchen-azurerm chef-provisioning-azurerm
 RUN apt-get --quiet clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 CMD ["/bin/bash"]
