@@ -4,9 +4,8 @@ This is simply the standard [chefdk](https://github.com/chef/chef-dk) Dockerfile
 
 ## Ubuntu packages
 - git
-- build-essentials
+- build-essential
 - wget
-- ssh
 - apt-transport-https
 
 ## Other packages
