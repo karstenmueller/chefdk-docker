@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 
 ARG CHANNEL=stable
 ARG VERSION=2.4.17
